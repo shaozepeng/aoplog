@@ -1,0 +1,74 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.bqt",
+    "module": "aop-log",
+    "version": "1.0.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "aop-log-1.0.0.aar",
+          "url": "aop-log-1.0.0.aar",
+          "size": 1644,
+          "sha512": "474d8966ee61335fcd6e403211347bfc1d7b146fee14f27bca456fd0011d1f57670c7d6cda51356dd13618620da93635818eabb8ec3685a1d84864fa5aae8cbb",
+          "sha256": "f2d433deeeb122e1c0b96bb551d12cbe5995b2e1a4724cc5707cfcc0a0b9be4a",
+          "sha1": "f66bae95d52f6c8fa777da1c6545764270f2aa76",
+          "md5": "c1ba538977c1833abd1d451f1eeeb7a5"
+        }
+      ]
+    },
+    {
+      "name": "releaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.3.0"
+          }
+        },
+        {
+          "group": "com.google.android.material",
+          "module": "material",
+          "version": {
+            "requires": "1.4.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "aop-log-1.0.0.aar",
+          "url": "aop-log-1.0.0.aar",
+          "size": 1644,
+          "sha512": "474d8966ee61335fcd6e403211347bfc1d7b146fee14f27bca456fd0011d1f57670c7d6cda51356dd13618620da93635818eabb8ec3685a1d84864fa5aae8cbb",
+          "sha256": "f2d433deeeb122e1c0b96bb551d12cbe5995b2e1a4724cc5707cfcc0a0b9be4a",
+          "sha1": "f66bae95d52f6c8fa777da1c6545764270f2aa76",
+          "md5": "c1ba538977c1833abd1d451f1eeeb7a5"
+        }
+      ]
+    }
+  ]
+}
